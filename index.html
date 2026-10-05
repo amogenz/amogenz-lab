@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#7ec3f0">
+<link rel="icon" type="image/jpeg" href="assets/icon-lab-v2.jpg?v=1">
+<link rel="apple-touch-icon" href="assets/icon-lab-v2.jpg?v=1">
+<title>AMOGENZ LAB — Mabar di Dunia AMOGENZ</title>
+<link rel="stylesheet" href="css/style.css?v=17">
+<script type="importmap">
+{"imports":{
+  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+
+<canvas id="game"></canvas>
+
+<!-- HUD -->
+<div id="brand">
+  <img src="assets/logo.jpg" alt="Logo AMOGENZ">
+  <span>AMOGENZ LAB</span>
+  <span id="online"><i></i><b>1</b> online</span>
+</div>
+<canvas id="minimap" width="140" height="140"></canvas>
+<button id="help-btn" class="icon-btn" aria-label="Bantuan">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+    <path d="M9.2 9a3 3 0 0 1 5.8 1c0 2-3 2.6-3 4.5"/><circle cx="12" cy="17.6" r="0.6" fill="currentColor"/>
+  </svg>
+</button>
+<button id="orient-btn" class="icon-btn" aria-label="Kunci orientasi landscape">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 9V5a1 1 0 0 1 1-1h4"/><path d="M20 15v4a1 1 0 0 1-1 1h-4"/>
+    <rect x="7" y="9" width="10" height="6" rx="1.5"/>
+  </svg>
+</button>
+<button id="fs-btn" class="icon-btn" aria-label="Mode layar penuh">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/>
+  </svg>
+</button>
+<button id="mic-btn" class="icon-btn" aria-label="Voice chat (tekan untuk bicara)">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="9" y="3" width="6" height="11" rx="3"/>
+    <path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>
+  </svg>
+</button>
+<button id="spk-btn" class="icon-btn on" aria-label="Suara (dengar)">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" stroke="none"/>
+    <path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9.4 9.4 0 0 1 0 13"/>
+  </svg>
+</button>
+<button id="lift-btn" class="hidden" aria-label="Lift gedung">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="3" width="14" height="18" rx="2"/>
+    <path d="M9 12l3-3 3 3M9 15l3 3 3-3" opacity="0.9"/>
+  </svg>
+  <span>Naik ke Rooftop</span>
+</button>
+<button id="chat-btn" class="icon-btn" aria-label="Chat">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/>
+  </svg>
+  <span id="chat-badge" class="hidden">0</span>
+</button>
+
+<!-- Joystick virtual (HP): selalu terlihat di kiri bawah -->
+<div id="joy-zone"></div>
+<div id="joy-base"><div id="joy-knob"></div></div>
+
+<!-- UI Kendaraan (helikopter & sepeda) -->
+<div id="vehicle-ui" class="hidden">
+  <div id="vehicle-label">Kendaraan</div>
+  <div id="heli-ctl" class="hidden">
+    <button id="heli-up" aria-label="Terbang naik">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+    <button id="heli-down" aria-label="Terbang turun">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </button>
+  </div>
+  <button id="vehicle-exit" aria-label="Turun dari kendaraan">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+    <span>Turun</span>
+  </button>
+</div>
+
+<!-- Tombol NAIK kendaraan: muncul saat pemain dekat (< 4m) -->
+<button id="board-btn" class="hidden" aria-label="Naik kendaraan">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  <span id="board-label">Naik</span>
+</button>
+<div id="board-hint" class="hidden">Dekati helikopter atau sepeda, lalu tekan tombol NAIK</div>
+
+<!-- Toast kecil -->
+<div id="toast"></div>
+
+<!-- Panel chat -->
+<div id="chat-panel" class="hidden">
+  <div id="chat-head">
+    <span>Obrolan Dunia</span>
+    <button id="chat-close" aria-label="Tutup chat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div id="chat-log"></div>
+  <form id="chat-form">
+    <input id="chat-input" maxlength="120" placeholder="Tulis pesan…" autocomplete="off">
+    <button id="chat-send" type="submit" aria-label="Kirim">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+  </form>
+</div>
+
+<!-- Bottom sheet info gedung -->
+<div id="sheet" class="hidden">
+  <div id="sheet-accent"></div>
+  <button id="sheet-close" aria-label="Tutup">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+      <path d="M6 6l12 12M18 6L6 18"/>
+    </svg>
+  </button>
+  <h2 id="sheet-name"></h2>
+  <p id="sheet-desc"></p>
+  <a id="sheet-visit" class="hidden" target="_blank" rel="noopener">
+    Kunjungi
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 4h6v6M20 4L10 14"/><path d="M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5"/>
+    </svg>
+  </a>
+  <span id="sheet-soon" class="hidden">Segera hadir</span>
+</div>
+
+<!-- Bantuan -->
+<div id="help" class="hidden">
+  <div class="help-card">
+    <h2>Selamat Datang!</h2>
+    <p class="help-sub">AMOGENZ LAB — dunia 3D komunitas kita</p>
+    <ul>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5" fill="currentColor" stroke="none"/></svg>
+        <b>Karakter owl:</b> kamu jadi burung hantu lucu. <b>HP:</b> joystick kiri buat jalan (dorong sampai mentok = <b>lari</b>), geser kanan layar buat putar kamera. <b>Desktop:</b> WASD jalan, <b>Shift</b> lari, drag mouse putar kamera.
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5H11L10 22l8.5-11.5H12L13 2z"/></svg>
+        <b>Teleport:</b> tekan <b>1–4</b> buat loncat ke zona Edukasi / Web / Tools / AI, <b>5</b> ke Galeri AMOGENZ, <b>0</b> balik ke titik awal.
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-4.5 5.5-4.5s4.9 1.5 5.5 4.5"/><circle cx="16.5" cy="9.5" r="2.6"/><path d="M15.5 14.7c2.9.1 4.7 1.6 5.2 4.3"/></svg>
+        <b>Mabar:</b> pemain lain muncul langsung di duniamu. Jalan bareng, masuk gedung bareng!
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/></svg>
+        <b>Chat:</b> tombol balon chat di kanan bawah buat ngobrol tulisan dengan semua pemain.
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        <b>Voice:</b> otomatis dengar suara pemain lain begitu masuk. Tombol <b>mic</b> buat bicara (ijinkan akses mic saat diminta), tombol <b>speaker</b> buat bisu/nyalakan suara mereka.
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <b>Ketuk gedung</b> atau tombol <b>ⓘ</b> melayang untuk info &amp; tombol kunjungi. <b>Gedung bisa dimasuki</b> lewat pintunya!
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4H4v5M15 4h5v5M9 20H4v-5M15 20h5v-5"/></svg>
+        <b>Tombol layar penuh</b> di kiri atas menyembunyikan toolbar browser biar puas menjelajah.
+      </li>
+    </ul>
+    <button id="help-close">Mengerti, mulai jelajah!</button>
+  </div>
+</div>
+
+<!-- Loading -->
+<div id="loading">
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="stars"></div>
+  <div class="load-card">
+    <div class="logo-ring"><img class="logo" src="assets/icon-lab-v2.jpg?v=1" alt="Ikon AMOGENZ LAB"></div>
+    <h1>AMOGENZ</h1>
+    <p class="world">LAB</p>
+    <p class="sub">Spirit of Youth &amp; Technology</p>
+    <div class="bar"><div id="load-fill"></div></div>
+    <div class="load-row"><p id="load-text">Menyiapkan dunia…</p><span id="load-pct">0%</span></div>
+    <p id="load-tip"><svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3h6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg> Tips: ketuk gedung untuk info &amp; tombol kunjungi</p>
+    <div class="login-box">
+      <input id="name-input" maxlength="16" placeholder="Nama karaktermu…" autocomplete="off">
+      <button id="start-btn" disabled><span>Memuat…</span></button>
+    </div>
+    <p class="ver">v3.8 &bull; mabar &bull; voice chat</p>
+  </div>
+</div>
+
+<!-- Panel Quiz My Nahwu -->
+<div id="quiz-panel" class="hidden">
+  <div class="quiz-card">
+    <div id="quiz-body"></div>
+  </div>
+</div>
+
+<script src="js/quiz.js?v=2"></script>
+<script>
+// DEBUG: tangkap semua error dan tampilkan di layar
+window.addEventListener('error', function(e) {
+  var d = document.createElement('div');
+  d.style.cssText = 'position:fixed;top:10px;left:10px;right:10px;background:#cc0000;color:#fff;padding:12px;z-index:999999;font-size:13px;word-break:break-all;border-radius:8px;font-family:monospace;';
+  d.textContent = 'ERROR: ' + (e.message || 'unknown') + ' @ ' + String(e.filename||'').split('/').pop() + ':' + e.lineno;
+  document.body.appendChild(d);
+}, true);
+</script>
+<script type="module" src="js/main-fixed.js?v=1"></script>
+</body>
+</html>
