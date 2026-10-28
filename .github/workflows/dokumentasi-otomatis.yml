@@ -1,0 +1,45 @@
+# Dokumentasi Otomatis Aman — AMOGENZ LAB
+# Jalan TANPA Muse: dijadwalkan GitHub Actions, mesinnya hanya Python stdlib.
+# Aturan keras: audit + draf saja. Workflow ini TIDAK PERNAH mengubah
+# README.md / ARCHITECTURE.md / CHANGELOG.md yang sudah ada, TIDAK deploy,
+# dan TIDAK memakai secret apa pun. Yang di-commit balik hanya folder
+# dokumentasi-otomatis/ (laporan + draf + daftar item yang ditahan gate).
+# Gerbang Audit Bumerang ada di dalam script: draf yang gagal gate tidak ditulis.
+#
+# Jadwal: tiap hari 01:51 UTC = 08:51 WIB (WIB = UTC+7, tanpa DST).
+# Bisa juga dijalankan manual dari tab Actions > Run workflow.
+name: Dokumentasi Otomatis Aman
+
+on:
+  schedule:
+    - cron: "51 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Siapkan Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Audit dokumentasi (selftest gate + audit repo)
+        run: |
+          test -f tools/dokumentasi_otomatis.py || { echo "tools/dokumentasi_otomatis.py belum ada di repo"; exit 1; }
+          python3 tools/dokumentasi_otomatis.py --mode repo --root . --selftest
+          cat dokumentasi-otomatis/report.md
+
+      - name: Commit laporan + draf (hanya folder dokumentasi-otomatis)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dokumentasi-otomatis
+          git diff --cached --quiet || git commit -m "Dokumentasi otomatis: laporan audit harian"
+          git push
