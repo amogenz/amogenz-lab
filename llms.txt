@@ -1,0 +1,38 @@
+# AMOGENZ LAB
+
+> AMOGENZ LAB adalah divisi riset & eksperimen dari AMOGENZ — laboratorium kreatif
+> yang bereksperimen membangun dunia virtual 3D, game, dan karya digital.
+> Tagline: "Research and Experiment Division from AMOGENZ".
+
+## Tentang
+
+- AMOGENZ adalah komunitas anak muda "Spirit of Youth & Technology" (berdiri 19 Okt 2021).
+- AMOGENZ LAB adalah divisi risetnya: tempat ide diuji lewat eksperimen.
+- Alur riset: Ide → Eksperimen → Beta → Rilis → Alumni (produk matang dirawat Divisi Teknologi).
+- Tiga divisi AMOGENZ: LAB (riset & eksperimen), Divisi Teknologi (infrastruktur & produk matang), Divisi Media (konten & karya visual).
+
+## Proyek Riset
+
+- **AMOGENZ 3D World** (status: RILIS) — dunia virtual 3D open-world yang bisa dijelajahi. https://3d.amogenz.xyz/
+- **Naruto War** (status: RILIS) — game web 2D bergaya anime. https://naruto.amogenz.xyz/
+- **AMO Downloader** (status: BETA) — pengunduh media.
+- Slot "Eksperimen Berikutnya" terbuka untuk usulan komunitas.
+
+## Zero AI
+
+Asisten AI resmi AMOGENZ LAB bernama **Zero**. Dua mode:
+- **Tanya** — menjawab seputar LAB dan ekosistem AMOGENZ.
+- **Usulkan Eksperimen** — merumuskan ide pengguna menjadi proposal mini (nama, kategori,
+  ringkasan, fitur inti, tantangan teknis, estimasi) yang terbit di Papan Usulan komunitas
+  dan bisa didukung serta dikomentari.
+
+## Arsip Lab (proyek yang pernah dinonaktifkan)
+
+- **ammo ai** (ammo.amogenz.my.id) — dihentikan 17 Mei 2026. AI berisi pengetahuan kitab fiqih & agama.
+- **web MQSD** (mqsd.amogenz.my.id) — dihentikan 7 Jan 2026. Prototipe aplikasi berbasis chat.
+- **web aksara lama** (aksara.amogenz.my.id) — dihentikan 7 Jan 2026. Aksara kini di aksara.amogenz.xyz (Divisi Teknologi).
+
+## Tautan
+
+- Situs: https://lab.amogenz.xyz/
+- Induk: https://amogenz.xyz/

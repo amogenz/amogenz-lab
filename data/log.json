@@ -1,0 +1,699 @@
+{
+ "entries": [
+  {
+   "date": "28 Okt 2026",
+   "desc": "Web gratis untuk mengubah foto dan video jadi burik ala rekaman HP jadul dan 144p, dengan template Nokia, CCTV, dan VHS; file diproses di perangkat pengguna tanpa diunggah ke server. Versi pertama sempat memakai efek grain sehingga hasilnya tetap tajam, lalu diperbaiki ke definisi kualitas rendah yang sesungguhnya dan sudah live di kompres.amogenz.xyz.",
+   "proj": "Kompres",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "kompres",
+   "title": "Kompres live: web pembuat media jadi burik"
+  },
+  {
+   "date": "28 Okt 2026",
+   "desc": "Tautan profil yang dibagikan ke WhatsApp atau Telegram kini menampilkan foto, nama, dan bio pemiliknya, bukan pratinjau generik; akun privat tetap memakai pratinjau generik. Perbaikan sudah live dan terverifikasi.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Pratinjau tautan profil kini informatif"
+  },
+  {
+   "date": "28 Okt 2026",
+   "desc": "Jawaban Zero soal versi Aksara kini membaca kanal rilis yang sedang live, sehingga selalu menyebut versi stabil dan beta terbaru tanpa perlu diubah manual lagi. Perbaikan sudah live dan terverifikasi; uji di HP menjadi penilai akhir.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Zero kini menjawab versi dari kanal rilis live"
+  },
+  {
+   "date": "28 Okt 2026",
+   "desc": "Pesan saat kode login dua langkah gagal terkirim kini jujur: meminta pengguna memeriksa koneksi lalu mengirim ulang, bukan menyatakan fitur belum tersedia. Versi beta ini menunggu uji dan promosi atas titah Bos.",
+   "proj": "Aksara",
+   "st": "Beta",
+   "status": "beta",
+   "tag": "aksara",
+   "title": "Beta 1.16.29: teks gagal kirim kode 2FA jadi jujur"
+  },
+  {
+   "date": "28 Okt 2026",
+   "desc": "Kode login dua langkah yang sebelumnya selalu gagal terkirim kini sampai ke email pengguna; jalur kirim dan verifikasinya sudah diperbaiki dan terverifikasi live. Uji login di HP menjadi penilai akhir.",
+   "proj": "Akun AMOGENZ",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "akun",
+   "title": "Portal Akun: kode login dua langkah kini terkirim"
+  },
+  {
+   "date": "27 Okt 2026",
+   "desc": "Versi stabil terbaru dipromosikan dari beta yang sama persis atas persetujuan Bos setelah lulus uji HP: email di Pusat Akun kini sinkron dari portal setiap dibuka, dan daftar chat memuat dari penyimpanan lokal sehingga terasa sekejap. Pengumumannya disiapkan dan menunggu aba-aba Bos.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Stabil 1.16.28: email Pusat Akun sinkron & chat memuat sekejap"
+  },
+  {
+   "date": "27 Okt 2026",
+   "desc": "Foto profil kini sinkron antara portal, web, dan aplikasi: ganti di satu tempat, foto ikut berubah di tempat lain, termasuk foto lama yang sudah disamakan. Perbaikan sudah live; uji di HP menjadi penilai akhir.",
+   "proj": "Akun AMOGENZ",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "akun",
+   "title": "Foto profil kini sinkron di tiga platform"
+  },
+  {
+   "date": "27 Okt 2026",
+   "desc": "Akun lama beremail sintetis yang menekan Verifikasi kini diarahkan ke Ganti Email, bukan lagi menerima kiriman yang tak bisa sampai; tombolnya pun berubah menjadi 'Ganti email dulu'. Perbaikan berlaku untuk semua akun dan sudah live; uji di HP menjadi penilai akhir.",
+   "proj": "Akun AMOGENZ",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "akun",
+   "title": "Verifikasi email sintetis diarahkan ke Ganti Email"
+  },
+  {
+   "date": "27 Okt 2026",
+   "desc": "Lobi kini ringkas ala game HP: garasi carousel satu kendaraan, tombol mulai besar, dan pengaturan menjadi layar sendiri yang tersimpan otomatis; bug layar pengaturan yang sempat menumpuk di bawah lobi sudah diperbaiki. Versi ini live dan terverifikasi di peramban; uji di HP tetap menjadi penilai akhir.",
+   "proj": "Offroad 3D",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "offroad",
+   "title": "Offroad 3D 0.5.0–0.5.1: lobi ala game HP"
+  },
+  {
+   "date": "26 Okt 2026",
+   "desc": "Game offroad 3D open world kini live dan bisa dimainkan langsung dari peramban: dunia bebas dengan lumpur, bukit, dan air, garasi tiga kendaraan dengan fisika berbeda, serta lobi layar penuh dan menu jeda standar HP. Arah setir yang sempat terbalik sudah diperbaiki dan tampilan live sudah terverifikasi di peramban; uji di HP tetap menjadi penilai akhir.",
+   "proj": "Offroad 3D",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "offroad",
+   "title": "Offroad 3D 0.2.0–0.4.0: game open world live"
+  },
+  {
+   "date": "25 Okt 2026",
+   "desc": "Batas akhir mandat di penjaga jadwal feed dan reels diperbarui ke 13 November 2026, sehingga jadwal tayang tidak berhenti sendiri pada akhir Oktober; perbaikan sudah diuji untuk tanggal-tanggal di sekitar batas lama.",
+   "proj": "AMOGENZ",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "amogenz",
+   "title": "Penjaga jadwal feed & reels diperbaiki ke mandat 13 Nov"
+  },
+  {
+   "date": "24 Okt 2026",
+   "desc": "Story bermusik yang sempat macet kini lanjut otomatis bila musik tak kunjung siap, dan chat yang dikeluarkan dari arsip tidak lagi kembali sendiri; bila prosesnya gagal, kini muncul pesan yang jelas, bukan diam. Versi ini dipromosikan dari beta yang sama persis atas persetujuan Bos, dan pengumumannya tayang lewat utas akun System serta story Instagram.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Stabil 1.16.27: story bermusik anti-macet & arsip anti-balik"
+  },
+  {
+   "date": "24 Okt 2026",
+   "desc": "Paket design system VIBE kini hadir sebagai paket portabel lengkap (manifest, DESIGN.md, panduan pakai, token CSS & JSON, komponen) yang bisa langsung dipakai AI pembangun antarmuka; alat lint baru memantau warna yang menyimpang dari token resmi.",
+   "proj": "VIBE Tokens",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "vibe",
+   "title": "Paket portabel VIBE + VIBE lint live"
+  },
+  {
+   "date": "24 Okt 2026",
+   "desc": "Atas permintaan Bos, AMOGENZ LAB membedah format paket design system OpenDesign; temuan awal sejajar dengan struktur VIBE dan laporan adopsi menyusul.",
+   "proj": "VIBE Tokens",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "vibe",
+   "title": "Studi OpenDesign: bandingkan format paket desain"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Portal lengkap 7 halaman (Beranda, Filosofi, Token, Ikon, Merek, Cara Pakai, Akses) terbit dengan kulit dokumentasi standar yang mudah dibaca manusia maupun AI; dilengkapi metadata SEO, sitemap, dan pendaftaran Google Search Console.",
+   "proj": "VIBE Tokens",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "vibe",
+   "title": "Portal VIBE live: vibe.amogenz.xyz jadi gerbang dokumentasi"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Dua kali promote ke kanal stabil dalam sehari — 1.16.22 menutup siklus beta, lalu 1.16.24 membawa baris verifikasi dan tombol ajakan 'Minta Verifikasi' ala IG; keduanya terkonfirmasi aman di HP Bos.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Stabil 1.16.22 & 1.16.24: promote ganda, lulus uji HP"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Baris verifikasi kini tampil di semua halaman tentang; bug DM pertama dan migrasi Akun Privat diperbaiki; ikon template Burung Dasi yang tertarik digambar ulang proporsional.",
+   "proj": "Aksara",
+   "st": "Beta",
+   "status": "beta",
+   "tag": "aksara",
+   "title": "Beta 1.16.23–1.16.26: verifikasi semua pengunjung, DM pertama, ikon Burung Dasi"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Akun lama beremail sintetis kini bisa mengganti email lewat tautan konfirmasi ke alamat baru; tampilan email dan status verifikasi di portal kini bersumber dari profil pengguna.",
+   "proj": "Akun AMOGENZ",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "akun",
+   "title": "Portal Akun: ganti email & data email dari profil"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Keluhan teks tak terbaca pada tema terang diatasi di semua halaman lewat token VIBE dan lapisan jembatan tema; logo burung yang tertarik vertikal diluruskan.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Web Aksara: tema terang diperbaiki menyeluruh"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Postingan privat, halaman pengaturan fullscreen, privasi komentar, dan privasi pesan di chat — keempatnya kini live dan teruji langsung di produksi.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Web Aksara: 4 fitur privasi hasil audit selesai"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Menanggapi masukan pemakai tukang kaos: desain kini ditekuk mengikuti permukaan asli model 3D sehingga pas di hasil unduhan, bukan melayang.",
+   "proj": "Cloth",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "cloth",
+   "title": "Cloth v2.7.3: desain menempel pas di permukaan kaos"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Video tur potret cloth.amogenz.xyz selesai dalam dua adegan (jelajah baju 3D dan ekspor desain); resep filming WebGL yang berhasil diabadikan untuk filming berikutnya.",
+   "proj": "AMOGENZ LAB",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "lab",
+   "title": "Video demo Cloth: tur baju 3D dan ekspor dalam 80 detik"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Hasil mockup yang disetujui Bos diterapkan ke situs asli dan terverifikasi live.",
+   "proj": "AMOGENZ",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "amogenz",
+   "title": "Upgrade Halaman Produk web utama tayang"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Pencarian di Kelola Verified kini menyaring sesuai kata kunci ala IG/FB; pemotong musik story ditulis ulang mengikuti tampilan status WhatsApp (maks 15 detik); fitur 'Minta Verifikasi' masuk aplikasi lengkap dengan tab Pengajuan untuk admin.",
+   "proj": "Aksara",
+   "st": "Beta",
+   "status": "beta",
+   "tag": "aksara",
+   "title": "Beta 1.16.20–1.16.22: saran Kelola Verified tersaring, panel musik ala WA, Minta Verifikasi"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Aturan akses data verifikasi diterbitkan dan terverifikasi berfungsi: akun yang memenuhi syarat bisa mengajukan verifikasi dari Tentang Akun, dan admin bisa menyetujui atau menolak dari tab Pengajuan.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Sistem Minta Verifikasi kini hidup di web & aplikasi"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Layanan hapus story di server diperbarui agar menerima pengguna beta; uji konfirmasi menunjukkan fungsi baru berjalan dan hapus story bisa dicoba ulang dari aplikasi.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Hapus story di aplikasi beta kini berfungsi"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Tiga paket manfaat baru: bagikan desain langsung ke WhatsApp/aplikasi lain, simpan otomatis plus galeri 'Desain Saya', dan Lembar Sablon siap cetak; dilanjutkan metadata SEO lengkap dan pendaftaran di Google Search Console.",
+   "proj": "Cloth",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "cloth",
+   "title": "Cloth v2.7.1–v2.7.2: Bagikan Desain, Simpan Otomatis, Lembar Sablon + SEO"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Alat perekam video demo otomatis terpasang dan berhasil dipakai: tur 19 detik situs Lab (layar pembuka, Proyek Riset, sorotan kartu 3D World) dengan narasi suara, sudah dikirim untuk dinilai.",
+   "proj": "AMOGENZ LAB",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "lab",
+   "title": "Video tur perdana lab.amogenz.xyz selesai & dikirim"
+  },
+  {
+   "date": "23 Okt 2026",
+   "desc": "Desain ulang halaman Produk selesai dimockup dan disetujui: produk unggulan diurut ke atas, kartu tajam pola apa-untuk-siapa, lencana konsisten, dan rating seragam diganti info jujur versi & ukuran; penerapan ke situs asli sedang berjalan.",
+   "proj": "AMOGENZ",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "amogenz",
+   "title": "Mockup upgrade Halaman Produk web utama disetujui"
+  },
+  {
+   "date": "22 Okt 2026",
+   "desc": "Perancang baju 3D berbasis web selesai dibangun dan langsung live: model 3D bebas putar-perbesar, unduhan PNG/JPG/WebP/SVG/GIF/WebM, dan pratinjau Picture-in-Picture ala Apple; nama resmi ditetapkan 'Cloth from AMOGENZ'.",
+   "proj": "Cloth",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "cloth",
+   "title": "Cloth from AMOGENZ: lahir hingga v2.6.0 dalam satu malam"
+  },
+  {
+   "date": "22 Okt 2026",
+   "desc": "Rangkaian beta hari peluncuran: tautan profil membuka aplikasi langsung, multi-akun hingga 3 akun, chat yang memuat sekejap dengan akar 'blok abu' diperbaiki, unggah story teks dibangun ulang, trim musik story ala IG, durasi story standar IG/WA, saran akun di pencarian, dan ikon aplikasi digambar ulang lebih besar.",
+   "proj": "Aksara",
+   "st": "Beta",
+   "status": "beta",
+   "tag": "aksara",
+   "title": "Rantai beta 1.16.9–1.16.19: App Links, multi-akun, chat sekejap, story, musik, ikon"
+  },
+  {
+   "date": "22 Okt 2026",
+   "desc": "Deep research dari 22 sumber menghasilkan peta strategi awal dua raksasa media sosial plus halaman analisis penerapannya untuk Aksara: bulan 1 padatkan satu komunitas, bulan 2 perbaiki kecepatan, bulan 3 ekspansi bertahap.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Riset strategi 3 bulan pertama Facebook & Instagram selesai"
+  },
+  {
+   "date": "22 Okt 2026",
+   "desc": "Versi launching final 1.16.8 resmi dirilis pagi ini setelah lolos uji penuh — pengumuman tayang serentak lewat utas akun System di web Aksara dan story Instagram; masa beku pengumuman berakhir, dan mulai hari ini setiap pembaruan diuji lewat kanal beta dulu sebelum dirilis stabil.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Aksara resmi meluncur untuk umum"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Tiga putaran terakhir sebelum peluncuran: keyboard kreator story yang sempat nyangkut diperbaiki, bug pendaftaran aplikasi dibetulkan, dan foto profil di header Pengaturan Chat kini bisa ditekan untuk membuka profil lawan chat — versi 1.16.8 yang lulus uji ditetapkan sebagai versi launching final.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.16.6–1.16.8: pemantapan versi launching"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Audit menyeluruh malam sebelum peluncuran berujung penguatan layanan notifikasi push malam itu juga — pengiriman notifikasi kini wajib memakai token otentikasi pengguna, dan akses baca data profil diperketat.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Audit keamanan pra-peluncuran + penguatan notifikasi"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Dua perbaikan malam peluncuran: alur pendaftaran akun di web yang sempat macet dibetulkan, dan portal login diperkuat agar akun yang mendaftar lewat aplikasi dapat masuk lewat web tanpa hambatan.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Web Aksara: pendaftaran & login diperbaiki"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Sisa foto profil dan gambar header lama dipindah ke penyimpanan eksternal; kini tak ada lagi data teks raksasa di basis data — ukuran total turun dari 4,2 MB menjadi 150 KB.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Migrasi avatar & header tuntas: data kini bersih"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Satu postingan kini bisa disematkan di paling atas profil, dan penanda 'Postingan pertama' otomatis berpindah bila postingan terawal dihapus. Ikut serta: posisi tab timeline yang kini mengikuti tinggi layar dan pembaca data yang toleran terhadap data rusak.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.16.0: sematkan postingan & penanda postingan pertama"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Balasan @santri yang mencari kitab kini dipicu otomatis dari server, dan jawaban AI @info ditulis berbaris-baris seperti sedang mengetik. Batas panjang jawaban AI juga dinaikkan agar tidak terpotong di tengah kalimat.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "@santri & @info kini membalas otomatis dari server"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Pemilihan berita kini mengundi sumbernya dulu dengan peluang sama, baru isinya — kabar dari tiap sumber kebagian giliran tampil secara adil.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Kurator @online: undian kini per sumber berita"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Halaman profil kini bisa digulir dan caption tampil rapi; halaman detail utas yang sempat error kini tampil penuh; tombol Ikuti di profil kini benar-benar bekerja dan profil resmi dapat tombol Chat.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Perbaikan web: scroll profil, detail utas, tombol Ikuti"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Balasan @santri kini tampil sebagai kartu ibarot: teks Arab dari kitab aslinya lengkap dengan nama kitab, jilid, dan halaman, plus tombol salin dan lihat penuh. Pertanyaan yang ambigu dijawab dengan chip pilihan klarifikasi.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.16.1: @santri v2 — kartu ibarot kitab"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Tombol Undang Teman kini tersedia di layar Chat Baru, postingan teks-saja dari @online tampil utuh, dan keyboard yang nyangkut saat menulis caption multi-foto sudah diperbaiki.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.16.2–1.16.3: Undang Teman & perbaikan keyboard caption"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Di web, balasan @santri kini tampil sebagai kartu ibarot seperti di aplikasi, dan komentar postingan tampil bersarang dengan suka per komentar — sama dengan tampilan aplikasi. Balasan yang ditulis dari web kini juga terbaca sebagai balasan bersarang di aplikasi.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Web Aksara: gelembung @santri & komentar kini sama dengan aplikasi"
+  },
+  {
+   "date": "21 Okt 2026",
+   "desc": "Versi peluncuran resmi Aksara untuk 22 Oktober. Keyboard caption yang sempat nyangkut sembuh total — pratinjau media kini tampil sebagai overlay di jendela utama dan terkonfirmasi di HP lewat kanal beta; ruang chat dibuka jauh lebih ringan dengan pemuatan pesan bertahap; seluruh fitur ambil musik dari YouTube/URL dihapus bersih, akun @vibes tetap ada sebagai kontak biasa.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.16.4–1.16.5: keyboard sembuh, chat ringan, bersih dari YouTube — versi launching"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Uji nyata membersihkan 48 berkas story kedaluwarsa dan membebaskan 124 MB ruang; pemeriksaan berjalan otomatis tiap hari dan kapasitas kini aman di 13%.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Pembersih story kedaluwarsa otomatis"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Asisten pencari kitab memahami bahasa natural lalu mencari, meminta klarifikasi, atau menolak di luar cakupannya — hasilnya lafadz plus referensi kitab; kedua jalur bot kini berjalan lewat server.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "@santri: AI pencari kitab ala MCP"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Lanjutan audit chat: wallpaper dipaksa tampil ulang, daftar chat anti-muat-ulang, logo Pusat Akun diperbesar 3x, @info kini dibalas lewat server, dan pratinjau pesan anti-basi.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.15.86–1.15.89"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Akar masalah ketemu: lapisan gestur menutupi wallpaper sejak versi lama; setelah diperbaiki, wallpaper ruang chat tampil dan sudah dikonfirmasi lewat video.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.15.91: wallpaper akhirnya tampil"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Pemeriksa versi pembaruan pulih setelah sempat error; pemantau per jam kini berjaga dan hanya memberi tahu bila versi tertinggal dua kali beruntun.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "API updater pulih + pemantau per jam"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Foto yang diunggah kini dikirim ke penyimpanan eksternal dan hanya tautannya yang disimpan — timeline jadi jauh lebih ringan dibuka. Versi uji sempat crash saat melampirkan foto dan sudah diperbaiki sebelum rilis.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.15.99: foto kini tersimpan di cloud"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "35 foto dan GIF lama dari 18 postingan dipindah ke penyimpanan eksternal — basis data komunitas menyusut dari 2,7 MB menjadi 63 KB tanpa satu pun postingan hilang.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Migrasi foto lama: basis data menyusut 98%"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Login di portal Akun AMOGENZ kini otomatis diteruskan ke web Aksara tanpa perlu menekan tombol masuk lagi; teks 'Amogenz akun' yang terbalik di portal diperbaiki menjadi 'Akun Amogenz'.",
+   "proj": "Akun AMOGENZ",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "akun",
+   "title": "SSO portal ↔ web Aksara"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Enam usulan awal tayang dan bisa dibaca publik — panel kuis tersebar di 3D World, kendaraan bisa dinaiki, hingga ruang nobar; siklus tantangan mingguan berjalan tiap Senin dengan draf yang dikurasi dulu.",
+   "proj": "AMOGENZ LAB",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "lab",
+   "title": "Papan usulan LAB terisi + tantangan mingguan"
+  },
+  {
+   "date": "20 Okt 2026",
+   "desc": "Satu halaman yang menghapus latar foto sepenuhnya di perangkat pengguna — tempel, seret, atau pilih gambar lalu unduh PNG transparan; tanpa unggahan ke server. Uji foto sungguhan masih menunggu.",
+   "proj": "AMOGENZ LAB",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "lab",
+   "title": "Halaman Hapus Latar (uji menunggu)"
+  },
+  {
+   "date": "19 Okt 2026",
+   "desc": "Gelombang rilis berisi Pusat Akun baru, komentar ala IG, kode verifikasi seragam, akun @online, dokumen di chat, detail postingan lega, dan batch pertama perbaikan audit chat.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "Rilis 1.15.79–1.15.85"
+  },
+  {
+   "date": "19 Okt 2026",
+   "desc": "Satu sumber tema resmi untuk semua produk — warna, radius, dan jarak kini konsisten di web maupun aplikasi; halaman contoh visualnya juga tayang.",
+   "proj": "VIBE Tokens",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "vibe",
+   "title": "VIBE Tokens v1.0.0 live"
+  },
+  {
+   "date": "19 Okt 2026",
+   "desc": "Web Nahwu kini punya tombol masuk lewat Akun AMOGENZ; jalur login web Aksara diperketat mengikuti standar keamanan umum.",
+   "proj": "Nahwu OS",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "nahwu",
+   "title": "Tombol Masuk dengan Akun AMOGENZ"
+  },
+  {
+   "date": "19 Okt 2026",
+   "desc": "Situs VIBE dirombak total: bagian Panduan Merek (logo, warna, aturan pakai) untuk publik plus Katalog Token untuk developer; seluruh nilai punya tombol Salin sekali klik dan logo resmi dua varian.",
+   "proj": "VIBE Tokens",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "vibe",
+   "title": "vibe.amogenz.xyz: Panduan Merek + Katalog Token"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Kanal uji terpisah resmi berjalan — postingan dari server utama dicerminkan satu arah tiap menit untuk dipantau, tanpa bisa menulis balik.",
+   "proj": "Aksara",
+   "st": "Beta",
+   "status": "beta",
+   "tag": "aksara",
+   "title": "Kanal beta + mirror postingan"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Akun-akun lama terintegrasi ke satu Akun AMOGENZ; pendaftar baru wajib memakai email asli yang diverifikasi kode — satu email untuk satu akun.",
+   "proj": "Aksara",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "aksara",
+   "title": "1 email 1 akun + verifikasi email"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Distribusi berkas aplikasi dipindah ke arsip publik gratis agar unduhan tetap lancar tanpa terbebani kuota.",
+   "proj": "Aksara",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "aksara",
+   "title": "Hosting berkas ke arsip publik"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Tampilan portal Akun AMOGENZ kini diambil dari token resmi — keputusan tampilan terpusat ke satu tempat tanpa mengubah apa pun yang terlihat.",
+   "proj": "Akun AMOGENZ",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "akun",
+   "title": "Portal adopsi VIBE Tokens"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Email resmi kini punya tiga sinyal kepercayaan penuh sehingga surat menyurat lebih dipercaya penyedia email dan tidak mudah masuk spam.",
+   "proj": "Akun AMOGENZ",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "akun",
+   "title": "SPF + DMARC live"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Ditulis ulang total: antarmuka berwarna per kategori dengan 2.814 soal yang diambil langsung dari basis data — tanpa karangan.",
+   "proj": "NahwuBot",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "nahwubot",
+   "title": "NahwuBot v2 live"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Laman log menjadi jurnal data-driven dengan filter per proyek dan lencana status; sapuan harian menyiapkan draf entri untuk disetujui dulu.",
+   "proj": "AMOGENZ LAB",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "lab",
+   "title": "Log Lab v1.8 semi-otomatis"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Lima warga digital bernama beraktivitas di kawasan kafe; mode kamera in-game mendukung zoom dan perekaman video.",
+   "proj": "AMOGENZ Verse",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "verse",
+   "title": "NPC beraktivitas & kamera foto in-game"
+  },
+  {
+   "date": "18 Okt 2026",
+   "desc": "Seluruh lobi diseragamkan ke standar AMOGENZ VIBE; kamera kini naik-turun murni vertikal tanpa tilt; web utama amogenz.xyz ikut direbrand.",
+   "proj": "AMOGENZ Verse",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "verse",
+   "title": "Lobi full VIBE & kamera vertikal"
+  },
+  {
+   "date": "17 Okt 2026",
+   "desc": "Basis data dikembalikan ke project sebelumnya agar lafadz dan data lama tetap utuh; halaman unduh.html live dengan info versi terbaru.",
+   "proj": "Nahwu OS",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "nahwu",
+   "title": "Database kembali ke project semula"
+  },
+  {
+   "date": "16 Okt 2026",
+   "desc": "Masuk dengan sidik jari/kunci layar; login dua langkah ala Google; foto profil dengan validasi keamanan berlapis.",
+   "proj": "Akun AMOGENZ",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "akun",
+   "title": "Passkey & login dua langkah live"
+  },
+  {
+   "date": "14 Okt 2026",
+   "desc": "Layar pembuka baru: logo 120px di tengah, wordmark Berlin Sans, dan footer 'from AMOGENZ' di bawah layar.",
+   "proj": "Telepati",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "telepati",
+   "title": "Splash standar AMOGENZ VIBE"
+  },
+  {
+   "date": "13 Okt 2026",
+   "desc": "Tema terang, topbar & footer ala web utama; pilihan tema tersimpan dan sinkron antar-situs AMOGENZ.",
+   "proj": "AMOGENZ LAB",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "lab",
+   "title": "Seragam standar web AMOGENZ"
+  },
+  {
+   "date": "6 Okt 2026",
+   "desc": "Rumah resmi lab akhirnya ada — proyek riset, Zero AI, arsip, semua ngumpul di satu tempat.",
+   "proj": "AMOGENZ LAB",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "lab",
+   "title": "Web AMOGENZ LAB dibangun"
+  },
+  {
+   "date": "6 Okt 2026",
+   "desc": "Tombol sentuh dirapikan ala game, musik MP3 dipasang, splash menunggu ketukan. Mode Latihan dibersihkan dari NPC nyasar.",
+   "proj": "Naruto War",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "naruto",
+   "title": "Naruto War v17"
+  },
+  {
+   "date": "5 Okt 2026",
+   "desc": "API info & download jalan. YouTube minta login (proteksi bot) — dipilih: tampilkan pesan jelas, tanpa bypass.",
+   "proj": "AMO Downloader",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "downloader",
+   "title": "AMO Downloader live"
+  },
+  {
+   "date": "5 Okt 2026",
+   "desc": "Masukan Bos: grafik burik di HP. Target: bagus tapi tetap enteng di HP kentang.",
+   "proj": "AMO 3D World",
+   "st": "Dikerjakan",
+   "status": "kerja",
+   "tag": "verse",
+   "title": "Riset grafik 3D World dimulai"
+  },
+  {
+   "date": "4 Okt 2026",
+   "desc": "Dunia 1,5x lebih luas, Galeri AMOGENZ, voice chat otomatis, karakter Joly full-body.",
+   "proj": "AMO 3D World",
+   "st": "Rilis",
+   "status": "rilis",
+   "tag": "verse",
+   "title": "3D World v4 \"Tech Valley\""
+  }
+ ],
+ "note": "Ditulis otomatis oleh asisten, tayang setelah persetujuan Bos. Aturan: tanpa info sensitif; entri Aksara ditahan s.d. 22 Okt 2026; tautan unduh APK butuh persetujuan per item.",
+ "updated": "2026-10-28"
+}
