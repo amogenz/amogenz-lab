@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-28T01:46:32.953909",
+ "generated": "2026-10-28T07:30:21.096789",
  "mode": "repo",
- "root": ".",
+ "root": "/home/runner/work/amogenz-lab/amogenz-lab",
  "projects": [
   {
-   "nama": "",
+   "nama": "amogenz-lab",
    "folder": ".",
    "docs": {
     "README.md": {
