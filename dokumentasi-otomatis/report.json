@@ -1,0 +1,31 @@
+{
+ "generated": "2026-10-28T01:46:32.953909",
+ "mode": "repo",
+ "root": ".",
+ "projects": [
+  {
+   "nama": "",
+   "folder": ".",
+   "docs": {
+    "README.md": {
+     "ada": true,
+     "ukuran": 3723
+    },
+    "ARCHITECTURE.md": {
+     "ada": true,
+     "ukuran": 14498
+    },
+    "CHANGELOG.md": {
+     "ada": true,
+     "ukuran": 1252
+    }
+   },
+   "changelog_tertinggal": true,
+   "draft": "dokumentasi-otomatis/drafts/CHANGELOG-draft.md",
+   "sumber_log_lab": true,
+   "proj_log_lab": "AMOGENZ LAB",
+   "entri_hilang": 6
+  }
+ ],
+ "held": []
+}
