@@ -159,6 +159,9 @@ def audit():
 def audit_repo(root):
     """Mode repo (GitHub Actions): audit repo itu sendiri saja."""
     root = Path(root)
+    if not root.name:
+        # Dipanggil dengan --root . : Path(".").name kosong, pakai nama folder checkout
+        root = root.resolve()
     out = root / "dokumentasi-otomatis"
     drafts = out / "drafts"
     out.mkdir(exist_ok=True); drafts.mkdir(exist_ok=True)
